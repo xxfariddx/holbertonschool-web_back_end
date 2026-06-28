@@ -1,10 +1,10 @@
-export default class getNeighborhoodsList {
-  constructor() {
-    this.sanFranciscoNeighborhoods = ['SOMA', 'Union Square'];
+export default function appendToEachArrayValue(array, appendString) {
+  let i = 0
+
+  for (const value of array) {
+    array[i] = appendString + value;
+    i++;
   }
 
-  addNeighborhood(newNeighborhood) {
-    this.sanFranciscoNeighborhoods.push(newNeighborhood);
-    return this.sanFranciscoNeighborhoods;
-  }
+  return array;
 }
