@@ -53,7 +53,7 @@ const app = http.createServer((req, res) => {
     res.writeHead(200, { 'Content-Type': 'text/plain' });
     getStudentsReport(DB_FILE, (error, report) => {
       if (error) {
-        res.end(`This is the list of our students\nCannot load the database`);
+        res.end('This is the list of our students\nCannot load the database');
         return;
       }
 
