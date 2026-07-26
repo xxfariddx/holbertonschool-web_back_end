@@ -1,4 +1,10 @@
 {
+  "name": "node_js_basics",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "node test-runner.js",
+    "lint": "node lint-runner.js"
+  },
   "dependencies": {
     "express": "^5.2.1"
   }
